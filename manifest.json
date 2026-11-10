@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "PR Auto Viewed",
+  "version": "1.0.0",
+  "description": "Ticks the \"Viewed\" checkbox on a PR file once you've scrolled past it.",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
